@@ -12,50 +12,107 @@
 
 <body style="background-color: #fffdd0;">
     <h1 class="text-center font-bold text-2xl">Snacks Survey</h1>
-    <h2>
-        <h1 class="text-center">What Snacks would you prefer?</h1>
-    </h2>
-    <div id="contents">
-        <div class="elements">
-            <img src="images/Lays.jpg" alt="Lays">
-            <h3 class="text-center">
-                Rs. 10
-            </h3>
+    <br>
+
+
+
+    <form id="sec1">
+        <h1 class="text-center font-bold">Are you a Vegetarian or Non-Vegetarian?</h1>
+        <div id="Veg" class="text-center" style="display: flex; justify-content: space-around;">
+            <div>
+                <input type="radio" id="Vegetarian" value="Vegetarian" name="Vegetarian" required>
+                <label for="Vegetarian">Vegetarian</label>
+            </div>
+            <div>
+                <input type="radio" id="Non-Vegetarian" value="Non-Vegetarian" name="Vegetarian" required>
+                <label for="Non-Vegetarian">Non-Vegetarian</label>
+            </div>
         </div>
-        <div class="elements">
-            <img src="images/Kurkure.jpg" alt="Kurkure">
-            <h3 class="text-center">
-                Rs. 10
-            </h3>
+        <br><br>
+
+        <h1 class="text-center"><strong>Do you think eating chicken</strong> (or chicken based products)<strong> would
+                be beneficial for health compared to potato or other things?</strong></h1>
+        <div id="Veg" class="text-center" style="display: flex; justify-content: space-around;">
+            <div class="WriteBox">
+                <select id="health" required>
+                    <option value=""> --select-- </option>
+                    <option value="Strongly Agree">Strongly Agree</option>
+                    <option value="Somewhat Agree"> Somewhat Agree </option>
+                    <option value="Somewhat Disagree"> Somewhat Disagree </option>
+                    <option value="Strongly Disagree"> Strongly Disagree </option>
+                </select>
+                <label for="Vegetarian"></label>
+            </div>
         </div>
-        <div class="elements">
-            <img src="images/Oyes.jpg" alt="Oyes">
-            <h3 class="text-center">
-                Rs. 10
-            </h3>
+        <br><br>
+        <div class="text-center">
+            <button type="submit" onclick="next1(event)">Next</button>
         </div>
-        <div class="elements">
-            <img src="images/Chicken Chips.jpg" alt="Chicken Chips">
-            <h3 class="text-center">
-                Rs. 10
-            </h3>
+    </form>
+
+
+
+    <div id="sec2" style="display: none;">
+        <h1 class="text-center font-bold">Which Snack would you prefer?</h1>
+        <br>
+        <div id="contents">
+            <div class="elements">
+                <img src="images/Lays.jpg" alt="Lays">
+                <h3 class="text-center">
+                    Rs. 10
+                </h3>
+            </div>
+            <div class="elements">
+                <img src="images/Kurkure.jpg" alt="Kurkure">
+                <h3 class="text-center">
+                    Rs. 10
+                </h3>
+            </div>
+            <div class="elements">
+                <img src="images/Oyes.jpg" alt="Oyes">
+                <h3 class="text-center">
+                    Rs. 10
+                </h3>
+            </div>
+            <div class="elements">
+                <img src="images/Chicken Chips.jpg" alt="Chicken Chips">
+                <h3 class="text-center">
+                    Rs. 10
+                </h3>
+            </div>
+            <div class="elements">
+                <img src="images/Bingo.png" alt="Bingo">
+                <h3 class="text-center">
+                    Rs. 10
+                </h3>
+            </div>
+            <div class="elements">
+                <img src="images/TooYum.jpg" alt="Too Yum">
+                <h3 class="text-center">
+                    Rs. 10
+                </h3>
+            </div>
         </div>
-        <div class="elements">
-            <img src="images/Bingo.png" alt="Bingo">
-            <h3 class="text-center">
-                Rs. 10
-            </h3>
-        </div>
-        <div class="elements">
-            <img src="images/TooYum.jpg" alt="Too Yum">
-            <h3 class="text-center">
-                Rs. 10
-            </h3>
+        <br>
+
+        <div class="text-center">
+            <button type="button" onclick="next2(event)">Next</button>
         </div>
 
     </div>
-    <div class="text-center">
-        <button type="button" >Submit</button>
+
+    <div id="sec3" style="display: none;">
+        <div class="text-center">
+            <h1 class="text-center font-bold">What made you choose Chicken chips?</h1>
+            <textarea class="WriteBox" placeholder="Write here"></textarea>
+        </div>
+        <div class="text-center">
+            <h1 class="text-center font-bold">What made you not choose Chicken chips?</h1>
+            <textarea class="WriteBox" placeholder="Write here"></textarea>
+        </div>
+        <div class="text-center">
+            <button type="button">Submit</button>
+        </div>
     </div>
 </body>
 
