@@ -4,6 +4,7 @@
     position: relative;
     left: 4vw;
 }
+
 .elements {
     border: 0.2vw solid black;
     border-radius: 1vw;
@@ -11,19 +12,27 @@
     width: 40vw;
     background-color: rgb(255, 255, 255);
 }
+
 .elements img {
     width: 40vw;
     height: auto;
     border-radius: 1vw;
     transition: transform 0.3s ease-out, opacity 0.3s ease-out;
 }
-.elements img:active, img:hover {
+
+.elements img:active,
+img:hover {
     transform: scale(0.8);
     transition: transform 0.3s ease-out, opacity 0.3s ease-out;
     opacity: 0.5;
 }
-.WriteBox{
-    background-color: white; 
-    border: 1px solid black; 
+
+.WriteBox {
+    background-color: white;
+    border: 1px solid black;
     border-radius: 4px;
+}
+
+textarea {
+    width: 80vw;
 }
