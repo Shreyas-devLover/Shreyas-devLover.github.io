@@ -57,39 +57,21 @@
         <br>
         <div id="contents">
             <div class="elements">
-                <img src="images/Lays.jpg" alt="Lays" onclick="selectVeg()">
+                <img src="images/ChipsCategory.png" alt="Lays" onclick="sec2click()">
                 <h3 class="text-center">
-                    Rs. 10
+                    Type- Chips Rs. 10
                 </h3>
             </div>
             <div class="elements">
-                <img src="images/Kurkure.jpg" alt="Kurkure" onclick="selectVeg()">
+                <img src="images/PuffsCategory.png" alt="Kurkure" onclick="sec2click()">
                 <h3 class="text-center">
-                    Rs. 10
+                    Type- Puffed Rs. 10
                 </h3>
             </div>
             <div class="elements">
-                <img src="images/Oyes.jpg" alt="Oyes" onclick="selectVeg()">
+                <img src="images/ExtrudedCategory.png" alt="Oyes" onclick="sec2click()">
                 <h3 class="text-center">
-                    Rs. 10
-                </h3>
-            </div>
-            <div class="elements">
-                <img src="images/Chicken Chips.jpg" alt="Chicken Chips" onclick="selectNonVeg()">
-                <h3 class="text-center">
-                    Rs. 10
-                </h3>
-            </div>
-            <div class="elements">
-                <img src="images/Bingo.png" alt="Bingo" onclick="selectVeg()">
-                <h3 class="text-center">
-                    Rs. 10
-                </h3>
-            </div>
-            <div class="elements">
-                <img src="images/TooYum.jpg" alt="Too Yum" onclick="selectVeg()">
-                <h3 class="text-center">
-                    Rs. 10
+                    Type- Extruded Rs. 10
                 </h3>
             </div>
         </div>
@@ -101,21 +83,87 @@
 
     </div>
 
-    <div id="sec3" style="display: none;">
-        <div class="text-center" id="sec3_2" style="display: none;">
-            <h1 class="text-center font-bold">What made you choose Chicken chips?</h1>
-            <textarea class="WriteBox" placeholder="Write here"></textarea>
+
+<div id="sec3" style="display: none;">
+    <h1 class="text-center">If we introduce <strong>Chicken</strong> in these Snack Types.<br>Would you be intrested to buy it?<br>Considering it would <strong>cost 1.8 times</strong> that of regular snacks</h1>
+    <br>
+    <div id="contents">
+        <div class="elements2">
+            <img src="images/ChickenChips.webp" alt="Lays" onclick="sec3click()">
+            <h3 class="text-center">
+                Type- Chips Rs. 18
+            </h3>
         </div>
-        <div class="text-center" id="sec3_1" style="display: none;">
-            <h1 class="text-center font-bold">What made you not choose Chicken chips?</h1>
-            <textarea class="WriteBox" placeholder="Write here"></textarea>
+        <div class="elements2">
+            <img src="images/ChickenPuffs.webp" alt="Kurkure" onclick="sec3click()">
+            <h3 class="text-center">
+                Type- Puffed Rs. 18
+            </h3>
         </div>
-        <div class="text-center">
-            <button class="border pr-3 pl-3 rounded bg-blue-200" type="button" onclick="submit()">Submit</button>
+        <div class="elements2">
+            <img src="images/ChickenExtrudes.webp" alt="Oyes" onclick="sec3click()">
+            <h3 class="text-center">
+                Type- Extruded Rs. 18
+            </h3>
+        </div>
+        <div class="elements2">
+            <img src="images/No.webp" alt="Oyes" onclick="selectVeg() ;sec3click()">
+            <h3 class="text-center">
+                Decline
+            </h3>
         </div>
     </div>
-    <div id="sec4" style="display:none">
-        <h1 class="text-center font-bold">Thank you for completing the survey!</h1>
+    <br>
+
+    <div class="text-center">
+        <button class="border pr-3 pl-3 rounded bg-blue-200" type="button" onclick="next3(event)">Next</button>
+    </div>
+
+</div>
+    <div id="sec4" style="display: none;">
+        <form class="text-center" id="sec4_2" style="display: none;">
+            <h1 class="text-center font-bold">What made you choose Chicken chips?</h1>
+            <textarea id="textarea1" class="WriteBox" placeholder="Write here" required></textarea>
+            <h1 class="text-center font-bold mt-10">Generally, What do you consider while buying snack</h1>   
+            <div id="Veg" class="text-center" style="display: flex; justify-content: space-around;">
+                <div class="WriteBox mb-10">
+                    <select id="whychoice1" required>
+                        <option value=""> --select-- </option>
+                        <option value="Price Point">Price Point</option>
+                        <option value="How Healthy"> How Healthy </option>
+                        <option value="Others"> Others </option>
+                        <option value="Randomly"> Randomly </option>
+                    </select>
+                    <label for="Vegetarian"></label>
+                </div>
+            </div> 
+            <div class="text-center">
+                <button class="border pr-3 pl-3 rounded bg-blue-200" type="submit" onclick="submitos(event)" >Submit</button>
+            </div>        
+        </form>
+        <form class="text-center" id="sec4_1" style="display: none;">
+            <h1 class="text-center font-bold">What made you not choose Chicken chips?</h1>
+            <textarea id="textarea2" class="WriteBox" placeholder="Write here" required></textarea>
+            <h1 class="text-center font-bold mt-10">Generally, What do you consider while buying snack</h1>   
+            <div id="Veg" class="text-center" style="display: flex; justify-content: space-around;">
+                <div class="WriteBox mb-10">
+                    <select id="whychoice2" required>
+                        <option value=""> --select-- </option>
+                        <option value="Price Point">Price Point</option>
+                        <option value="How Healthy"> How Healthy </option>
+                        <option value="Others"> Others </option>
+                        <option value="Randomly"> Randomly </option>
+                    </select>
+                    <label for="Vegetarian"></label>
+                </div>
+            </div>
+            <div class="text-center">
+                <button class="border pr-3 pl-3 rounded bg-blue-200" type="submit" onclick="submitos(event)" >Submit</button>
+            </div>
+        </form>
+    </div>
+    <div id="sec5" style="display:none">
+        <h1 class="text-center font-bold m-7">Thank you for completing the survey!</h1>
     </div>
 </body>
 

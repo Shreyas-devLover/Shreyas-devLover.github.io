@@ -5,7 +5,23 @@
     left: 4vw;
 }
 
+
 .elements {
+    border: 0.2vw solid black;
+    border-radius: 1vw;
+    margin: 3vw;
+    width: 75vw;
+    background-color: rgb(255, 255, 255);
+}
+
+.elements img {
+    width: 75vw;
+    height: auto;
+    border-radius: 1vw;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+.elements2 {
     border: 0.2vw solid black;
     border-radius: 1vw;
     margin: 3vw;
@@ -13,7 +29,7 @@
     background-color: rgb(255, 255, 255);
 }
 
-.elements img {
+.elements2 img {
     width: 40vw;
     height: auto;
     border-radius: 1vw;
@@ -58,5 +74,8 @@ textarea {
 }
 
 #sec4 {
+    animation: zoom-in 0.3s ease-in-out;
+}
+#sec5 {
     animation: zoom-in 0.3s ease-in-out;
 }
