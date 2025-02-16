@@ -36,3 +36,27 @@ img:hover {
 textarea {
     width: 80vw;
 }
+
+@keyframes zoom-in {
+    0% {
+        transform: scale(0.55);
+        opacity: 0.1;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+#sec2 {
+    animation: zoom-in 0.3s ease-in-out;
+}
+
+#sec3 {
+    animation: zoom-in 0.3s ease-in-out;
+}
+
+#sec4 {
+    animation: zoom-in 0.3s ease-in-out;
+}
