@@ -5,7 +5,7 @@ function next1(event) {
         document.getElementById("sec5").style.display = "block"
         document.getElementById("sec1").style.display = "none"
         setTimeout(window.close, 1000 * 10)
-        fetch("http://localhost:3000/survey", {
+        fetch("https://train.vinaiak.com/survey", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json;charset=UTF-8"
@@ -62,7 +62,7 @@ function submitos(event) {
     else return
 }
 function sendServer() {
-    fetch("http://localhost:3000/survey", {
+    fetch("https://train.vinaiak.com/survey", {
         method: "POST",
         headers: {
             "Content-Type": "application/json;charset=UTF-8"
