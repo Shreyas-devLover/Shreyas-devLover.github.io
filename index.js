@@ -47,8 +47,8 @@ function next3() {
     }
     document.getElementById("sec3").style.display = 'none'
     document.getElementById("sec4").style.display = "block"
-    if (type) document.getElementById("sec4_1").style.display = "block"
-    else document.getElementById("sec4_2").style.display = "block"
+    if (type) document.getElementById("sec4_2").style.display = "block"
+    else document.getElementById("sec4_1").style.display = "block"
 }
 function submitos(event) {
     if ((document.getElementById("textarea1").value || document.getElementById("textarea2").value) &&
